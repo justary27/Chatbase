@@ -1,0 +1,111 @@
+@use 'src/app/styles/constants';
+
+.chatBot {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 25%;
+	height: 80%;
+	background-color: white;
+
+	padding: 0.5rem 0.75rem;
+	// border: 0.0625rem constants.$secondaryColor solid;
+	border-radius: 0.5rem;
+
+	box-shadow:
+		0.125rem 0.125rem 2rem rgba(0, 0, 0, 0.125),
+		-0.125rem -0.125rem 1rem rgba(0, 0, 0, 0.125);
+
+	.botHeader {
+		height: 7.5%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.botTitle {
+			display: flex;
+			align-items: center;
+		}
+
+		.botButtons {
+			align-items: center;
+
+			.buttonStyle {
+				color: constants.$secondaryColor;
+				margin: 0 0.25rem;
+				padding: 0;
+				border: none;
+				background: none;
+			}
+		}
+
+		img {
+			margin-right: 0.75rem;
+		}
+	}
+
+	hr {
+		width: 100%;
+		color: rgba(constants.$secondaryColor, 0.25);
+	}
+
+	.botContent {
+		height: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.botMessageArea {
+			height: 92.5%;
+			display: flex;
+			flex-direction: column;
+			padding: 0.25rem 0.75rem;
+			overflow: scroll;
+		}
+
+		.botPrompt {
+			height: 12.5%;
+			margin: 0.75rem 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			
+			.botQuickMsgs{
+				display: flex;
+				margin: 0.5rem 0;
+
+				button{
+					padding: 0.5rem;
+					margin: 0 0.25rem;
+					border-radius: 0.8rem;
+					border: none;
+					background: constants.$ternaryColor;
+
+					@media (max-width: 640px) {
+						padding: 0.25rem;
+					}
+				}
+			}
+
+			.botMessage{
+				display: flex;
+				margin-bottom: 0.25rem;
+
+				.botMessagePrompt {
+					margin-right: 0.5rem;
+					height: 2.25rem;
+					flex-grow: 1;
+					border: 0.0625rem constants.$secondaryColor solid;
+					border-radius: 0.25rem;
+				}
+	
+				.botMessageButton {
+					height: 2.25rem;
+					padding: 0;
+					border: none;
+					background: none;
+				}
+			}
+		}
+	}
+}

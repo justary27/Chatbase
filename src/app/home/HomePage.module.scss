@@ -1,0 +1,45 @@
+@use 'src/app/styles/constants';
+
+.homePage{
+    height: 500vh;
+    width: 100%;
+
+    .homeTitle{
+        padding: 2rem 3rem;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        span{
+            color: constants.$complementaryColor;
+        }
+
+        button{
+            border: none;
+            padding: 1rem;
+            border-radius: 0.75rem;
+
+            font-size: constants.$body;
+            font-weight: bold;
+
+            color: constants.$primaryColor;;
+            background-color: constants.$complementaryStrongColor;
+        }
+    }
+
+    .homeVideo{
+        padding: 2rem 3rem;
+    }
+
+    .homeDemo{
+        padding: 2rem 3rem;
+    }
+
+    // .liveDemo{
+    //     padding: 2rem 3rem;
+    // }
+}

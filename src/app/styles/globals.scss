@@ -1,0 +1,66 @@
+@use '/src/app/styles/constants';
+
+:root{
+    height: 100%;
+
+    font-family: constants.$openSans;
+    color: constants.$bodyColor;
+
+
+	h1 {
+		font-size: 2rem;
+        font-family: constants.$ubuntu;
+        color: constants.$headingColor;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+        font-family: constants.$ubuntu;
+        color: constants.$headingColor;
+	}
+
+	h3 {
+		font-size: 1.17rem;
+        font-family: constants.$ubuntu;
+        color: constants.$headingColor;
+	}
+    
+    h4 {
+        font-size: 1rem;
+        font-family: constants.$ubuntu;
+        color: constants.$headingColor;
+    }
+
+	h5 {
+		font-size: 0.83rem;
+        font-family: constants.$ubuntu;
+        color: constants.$headingColor;
+	}
+
+	h6 {
+		font-size: 0.67rem;
+        font-family: constants.$ubuntu;
+        color: constants.$headingColor;
+	}
+
+	body {
+        margin: 0;
+        height: inherit;
+	}
+
+    button {
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: constants.$bodyColor;
+        font-weight: 600;
+
+        &:hover{
+            color: constants.$secondaryColor;
+        }
+    }
+}

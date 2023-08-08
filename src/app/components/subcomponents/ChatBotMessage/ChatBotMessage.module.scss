@@ -1,0 +1,21 @@
+@use '/src/app/styles/constants';
+
+.chatBotMessage {
+    background-color: #F1F1F0;
+    margin: 0.75rem 0;
+    color: constants.$secondaryColor;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    max-width: 80%;
+    width: fit-content;
+}
+
+.fromBot{
+    align-self: flex-start;
+}
+
+.fromUser{
+    background-color: constants.$complementaryStrongColor;
+    color: constants.$primaryColor;
+    align-self: flex-end;
+}
